@@ -12,6 +12,7 @@ socket.setdefaulttimeout(0.25)
 print_lock = threading.Lock()
 
 # --- Define the target input ---
+System.Clear()
 target = input(Col.white + '[' + Col.yellow + '!' + Col.white + '] Enter the host to be scanned (type "localhost" for a local scan.)\n$> ')
 t_IP = socket.gethostbyname(target)
 print (Col.white + '[' + Col.green + '!' + Col.white + '] Starting scan on host: ', t_IP)
